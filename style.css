@@ -1,0 +1,163 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #D3E4CD; /* Sage green for text */
+    background-color: #1C1C1C; /* Black background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    border-bottom: 2px solid #D3E4CD; /* Sage green border */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D3E4CD;
+    font-weight: bold;
+}
+
+.burger-menu {
+    font-size: 24px;
+    color: #D3E4CD;
+    cursor: pointer;
+}
+
+/* Section Styling */
+section {
+    padding: 3rem 2rem;
+    border-bottom: 1px solid #D3E4CD; /* Sage green line to differentiate sections */
+}
+
+h2 {
+    color: #D3E4CD;
+    border-bottom: 2px solid #D3E4CD; /* Sage green line under headings */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Intro Section Styling */
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+button {
+    background-color: #D3E4CD; /* Sage green */
+    color: #1C1C1C; /* Black */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #B2C2A1; /* Slightly darker sage green */
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Timeline Styling */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline-item {
+    background-color: #2A2A2A; /* Dark grey for item background */
+    padding: 1rem;
+    border-left: 4px solid #D3E4CD; /* Sage green border for the timeline indicator */
+    margin-left: 1rem;
+}
+.portfolio-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: #D3E4CD;
+    width: 30%;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 200px; /* Adjust height to fit the rectangle */
+    object-fit: cover; /* Ensures image scales correctly without distortion */
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: none;
+}
+/* General Styles from Previous Code */
+/* ...existing styles */
+
+/* Animation Styles */
+@keyframes fadeInLetter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-title {
+    font-size: 5rem; /* Larger font size for the Hello */
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.animate-title span {
+    opacity: 0;
+    animation: fadeInLetter 0.5s ease forwards;
+    font-weight: bold;
+    font-size: 4rem; /* Adjust to make it larger */
+    color: #2d2d2a; /* Darker color for visibility */
+}
+
+/* Delay each letter's animation */
+.animate-title span:nth-child(1) { animation-delay: 0s; }
+.animate-title span:nth-child(2) { animation-delay: 0.1s; }
+.animate-title span:nth-child(3) { animation-delay: 0.2s; }
+.animate-title span:nth-child(4) { animation-delay: 0.3s; }
+.animate-title span:nth-child(5) { animation-delay: 0.4s; }
+.animate-title span:nth-child(6) { animation-delay: 0.5s; }
+.animate-title span:nth-child(7) { animation-delay: 0.6s; }
+
+/* Animate the introduction text */
+.animate-text {
+    animation: fadeIn 3s ease-in-out;
+}
+
